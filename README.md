@@ -6,7 +6,7 @@
 [![NPM downloads](https://img.shields.io/npm/dm/stylelint-config-html.svg)](http://www.npmtrends.com/stylelint-config-html)
 [![Build Status](https://github.com/ota-meshi/stylelint-config-html/workflows/CI/badge.svg?branch=main)](https://github.com/ota-meshi/stylelint-config-html/actions?query=workflow%3ACI)
 
-> The shareable HTML (and HTML-like) config for [Stylelint].
+# WIP!
 
 This config bundles the [`postcss-html` custom syntax](https://github.com/ota-meshi/postcss-html) and configures it.  
 If you use this config in your Stylelint config, HTML, XML, [Vue], [Svelte], [Astro], and [PHP] files will be parsable. The Stylelint rules you have configured will be able to check these files.
