@@ -1,4 +1,4 @@
-name: CI
+name: Node.js CI
 
 on:
   push:
@@ -7,29 +7,20 @@ on:
     branches: [main]
 
 jobs:
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - name: Install Packages
-        run: npm i --legacy-peer-deps
-      - name: Lint
-        run: npm run lint
-  test:
+  build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [12.x, 14.x, 16.x]
+        node-version: [14.x, 16.x, 18.x, 20.x]
+
     steps:
       - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Install Packages
-        run: npm i --legacy-peer-deps
-      - name: Test
-        run: npm test
+          cache: 'pnpm'
+      - run: pnpm install
+      - run: pnpm run build --if-present
+      - run: pnpm test

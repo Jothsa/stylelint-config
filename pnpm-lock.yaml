@@ -5,7 +5,7 @@ dependencies:
     specifier: ^0.0.1
     version: 0.0.1(stylelint@15.6.1)
   stylelint:
-    specifier: '>=14.0.0'
+    specifier: ^15.6.1
     version: 15.6.1
   stylelint-config-html:
     specifier: ^1.1.0

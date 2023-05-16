@@ -15,8 +15,6 @@
     "astro.js"
   ],
   "scripts": {
-    "test": "mocha \"tests/lib/**/*.js\" --reporter dot --timeout 60000",
-    "preversion": "npm test && git add .",
     "lint:es": "eslint .",
     "lint:prettier": "prettier --cache --plugin-search-dir . --check .",
     "lint": " pnpm lint:prettier; pnpm lint:es",
@@ -39,6 +37,14 @@
     "eslint-plugin-yml": "^1.0.0",
     "prettier": "^2.4.1"
   },
+  "dependencies": {
+    "@jothsa/stylelint-config-idiomatic-order": "^0.0.1",
+    "stylelint": "^15.6.1",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-recommended": "^12.0.0",
+    "stylelint-high-performance-animation": "^1.8.0"
+  },
+  "packageManager": "pnpm@8.5.1",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jothsa/stylelint-config.git"
@@ -48,11 +54,5 @@
   "bugs": {
     "url": "https://github.com/jothsa/stylelint-config/issues"
   },
-  "homepage": "https://github.com/jothsa/stylelint-config#readme",
-  "dependencies": {
-    "@jothsa/stylelint-config-idiomatic-order": "^0.0.1",
-    "stylelint-config-html": "^1.1.0",
-    "stylelint-config-recommended": "^12.0.0",
-    "stylelint-high-performance-animation": "^1.8.0"
-  }
+  "homepage": "https://github.com/jothsa/stylelint-config#readme"
 }
