@@ -1,0 +1,58 @@
+{
+  "name": "@jothsa/stylelint-config",
+  "scope": "@jothsa",
+  "version": "0.0.1",
+  "description": "Jothsa's Stylelint config",
+  "keywords": [
+    "stylelint",
+    "stylelint-config"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "html.js",
+    "svelte.js",
+    "astro.js"
+  ],
+  "scripts": {
+    "test": "mocha \"tests/lib/**/*.js\" --reporter dot --timeout 60000",
+    "preversion": "npm test && git add .",
+    "lint:es": "eslint .",
+    "lint:prettier": "prettier --cache --plugin-search-dir . --check .",
+    "lint": " pnpm lint:prettier; pnpm lint:es",
+    "format:es": "eslint . --fix",
+    "format:prettier": "prettier --cache --plugin-search-dir . --write .",
+    "format": "pnpm format:prettier; pnpm format:es;"
+  },
+  "peerDependencies": {
+    "stylelint": ">=14.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-json-schema-validator": "^4.0.0",
+    "eslint-plugin-jsonc": "^2.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-regexp": "^1.5.0",
+    "eslint-plugin-yml": "^1.0.0",
+    "prettier": "^2.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jothsa/stylelint-config.git"
+  },
+  "author": "Jothsa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jothsa/stylelint-config/issues"
+  },
+  "homepage": "https://github.com/jothsa/stylelint-config#readme",
+  "dependencies": {
+    "@jothsa/stylelint-config-idiomatic-order": "^0.0.1",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-recommended": "^12.0.0",
+    "stylelint-high-performance-animation": "^1.8.0"
+  }
+}
