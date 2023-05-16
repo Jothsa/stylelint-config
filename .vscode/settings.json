@@ -1,12 +1,7 @@
 {
   // "eslint.validate": ["javascript", "javascriptreact", "json", "jsonc", "yaml"]
 
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
+  "eslint.validate": ["javascript", "typescript"],
 
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
