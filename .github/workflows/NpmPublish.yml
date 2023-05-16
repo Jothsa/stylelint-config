@@ -23,6 +23,6 @@ jobs:
       - name: check can npm-publish
         run: pnpx can-npm-publish
       - name: release
-        run: npm publish
+        run: pnpm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
