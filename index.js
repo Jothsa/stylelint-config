@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const openPropsCustomMedia = [
   '/^--(xxs|xs|sm|md|lg|xl|xxl)-(only|n-above|n-below)$/',
@@ -98,7 +98,7 @@ module.exports = {
     ],
 
     //* allow beginning underscore eg --_bg, but otherwise kebab case
-    // * also allow extra - in middle for neg
+    // * also allow extra - in middle for negative
     'custom-property-pattern': [
       '^(_?)([a-z][a-z0-9]*)(-{1,2}[a-z0-9]+)*$',
       ...openPropsCustomMedia,
