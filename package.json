@@ -8,12 +8,6 @@
     "stylelint-config"
   ],
   "main": "index.js",
-  "files": [
-    "index.js",
-    "html.js",
-    "svelte.js",
-    "astro.js"
-  ],
   "scripts": {
     "lint:es": "eslint .",
     "lint:prettier": "prettier --cache --plugin-search-dir . --check .",
