@@ -44,7 +44,7 @@ devDependencies:
     version: 1.5.0(eslint@8.0.0)
   eslint-plugin-yml:
     specifier: ^1.0.0
-    version: 1.0.0(eslint@8.0.0)
+    version: 1.8.0(eslint@8.0.0)
   prettier:
     specifier: ^2.4.1
     version: 2.4.1
@@ -650,8 +650,8 @@ packages:
       scslre: 0.1.6
     dev: true
 
-  /eslint-plugin-yml@1.0.0(eslint@8.0.0):
-    resolution: {integrity: sha512-0RVoUFh5vpznE2DIP5agSpWO/nU8GgAWwoTAHWopU2X+1SCB5ykHU6DwS0GrZ5Hvejtk6CcADQllpQQJB4C5QA==}
+  /eslint-plugin-yml@1.8.0(eslint@8.0.0):
+    resolution: {integrity: sha512-fgBiJvXD0P2IN7SARDJ2J7mx8t0bLdG6Zcig4ufOqW5hOvSiFxeUyc2g5I1uIm8AExbo26NNYCcTGZT0MXTsyg==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=6.0.0'
