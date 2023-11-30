@@ -29,7 +29,7 @@ const openPropsCustomMedia = [
   '--useDataNotOK',
 ];
 
-module.exports = {
+export default {
   extends: [
     'stylelint-config-html',
     'stylelint-config-recommended',
