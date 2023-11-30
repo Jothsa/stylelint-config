@@ -1,7 +1,7 @@
 {
   "name": "@jothsa/stylelint-config",
   "scope": "@jothsa",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Jothsa's Stylelint config",
   "keywords": [
     "stylelint",
